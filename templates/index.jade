@@ -3,22 +3,148 @@ block vars
   - var bodyclass = null;
 html(lang='en')
   head
-    block head
-      meta(charset='utf-8')
-      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-      meta(name='viewport', content='width=device-width')
-      title
-        block title
-          = locals.name
-      link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
-      link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300')
-      link(rel='stylesheet', href=contents.css['main.css'].url)
-  body(class=bodyclass)
-    header.header
-      div.content-wrap
-        block header
-          div.logo
-            h1
-              a(href=locals.url)= locals.name
-            p.description= locals.description
-    footer
+    meta(charset='utf-8')
+    title zVintauge - Free Html5 Templates
+    meta(name='description', content='Free Responsive Html5 Css3 Templates | zerotheme.com')
+    meta(name='author', content='https://www.zerotheme.com')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(rel='stylesheet', href='css/zerogrid.css')
+    link(rel='stylesheet', href='css/style.css')
+    // Custom Fonts
+    link(href='css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/menu.css')
+    script(src='js/jquery1111.min.js', type='text/javascript')
+    script(src='js/script.js')
+
+
+  body.home-page
+    .wrap-body
+      header
+        .logo
+          a(href='#') zVintauge
+          span Collectible Vintage & Antique Photos
+        #cssmenu.align-center
+          ul
+            li
+              a(href='index.html')
+                span Home
+            li.last
+              a(href='contact.html')
+                span Contact
+      section#container
+        .wrap-container
+          section.content-box.box-1
+            .zerogrid
+              .wrap-box
+                .box-header
+                  h2 ABOUT US
+                .box-content
+                  p
+                    | Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla 
+                    br
+                    | fringilla purus at leo dignissim congue. Mauris elementum accumsan leo vel tempor. Sit amet cursus nisl aliquam. 
+                    br
+                    | Aliquam et elit eu nunc rhoncus viverra quis at felis. Sed do
+          section.content-box.box-style-1.box-4
+            .zerogrid(style='width: 100%')
+              .wrap-box
+                .row
+                  article
+                    .col-1-2
+                      img(src='images/slide1.jpg', alt='')
+                    .col-1-2
+                      .entry-content.t-center
+                        h3 The title on the article
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.
+                        a.button(href='single.html') Read More
+                .row
+                  article
+                    .col-1-2.f-right
+                      img(src='images/slide2.jpg', alt='')
+                    .col-1-2
+                      .entry-content.t-center
+                        h3 The title on the article
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.
+                        a.button(href='single.html') Read More
+                .row
+                  article
+                    .col-1-2
+                      img(src='images/slide3.jpg', alt='')
+                    .col-1-2
+                      .entry-content.t-center
+                        h3 The title on the article
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.
+                        a.button(href='single.html') Read More
+      footer
+        .zerogrid.wrap-footer
+          .row
+            .col-1-3.col-footer-1
+              .wrap-col
+                h3.widget-title About Us
+                p
+                  | Ut volutpat consectetur aliquam. Curabitur auctor in nis ulum ornare. Metus elit vehicula dui. Curabitur auctor in nis ulum ornare. Sed consequat, augue condimentum fermentum
+                p
+                  | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium
+            .col-1-3.col-footer-2
+              .wrap-col
+                h3.widget-title Recent Post
+                ul
+                  li
+                    a(href='#') MOST VISITED COUNTRIES
+                  li
+                    a(href='#') 5 PLACES THAT MAKE A GREAT HOLIDAY
+                  li
+                    a(href='#') PEBBLE TIME STEEL IS ON TRACK TO SHIP IN JULY
+                  li
+                    a(href='#') STARTUP COMPANY???S CO-FOUNDER TALKS ON HIS NEW PRODUCT
+            .col-1-3.col-footer-3
+              .wrap-col
+                h3.widget-title Tag Cloud
+                a(href='#') animals
+                a(href='#') cooking
+                a(href='#') countries
+                a(href='#') city
+                a(href='#') children
+                a(href='#') home
+                a(href='#') likes
+                a(href='#') photo
+                a(href='#') link
+                a(href='#') law
+                a(href='#') shopping
+                a(href='#') skate
+                a(href='#') scholl
+                a(href='#') video
+                a(href='#') travel
+                a(href='#') images
+                a(href='#') love
+                a(href='#') lists
+                a(href='#') makeup
+                a(href='#') media
+                a(href='#') password
+                a(href='#') pagination
+                a(href='#') wildlife
+        .zerogrid.bottom-footer
+          .row
+            .bottom-social
+              a(href='#')
+                i.fa.fa-facebook
+              a(href='#')
+                i.fa.fa-instagram
+              a(href='#')
+                i.fa.fa-twitter
+              a(href='#')
+                i.fa.fa-google-plus
+              a(href='#')
+                i.fa.fa-pinterest
+              a(href='#')
+                i.fa.fa-vimeo
+              a(href='#')
+                i.fa.fa-linkedin
+              a(href='#')
+                i.fa.fa-youtube
+          .copyright
+            | Copyright @ - Designed by 
+            a(href='https://www.zerotheme.com') ZEROTHEME
